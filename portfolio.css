@@ -1,0 +1,14 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: hotpink;
+  margin: 10px 50px 10px 50px;
+  background-color: Ivory;
+}
+h1, h2 {
+  font-family: 'sans-serif';
+}
+.center {
+  margin-left: 600px;
+  margin-right: 600px;
+  padding: 1em;
+}
