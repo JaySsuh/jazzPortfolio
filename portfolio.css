@@ -7,10 +7,10 @@ body {
 h1, h2 {
   font-family: 'sans-serif';
 }
-.center {
-  margin-left: 600px;
-  margin-right: 600px;
-  padding: 1em;
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav-item {
   padding-left: 1rem;
@@ -43,4 +43,13 @@ h1, h2 {
 footer{
   background-color: Ivory;
   color: hotpink;
+}
+.image-container {
+  text-align: center;
+}
+.image-container img{
+  max-width: 100%;
+  max-height: 500px;
+  height: auto;
+  margin: 200px;
 }
