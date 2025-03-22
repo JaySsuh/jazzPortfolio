@@ -1,6 +1,3 @@
-.background {
-  color: pink;
-}
 body {
   background-image: url('https://64.media.tumblr.com/fad5acf8e8720fe9096aa575117d48cd/tumblr_oedw5v5oev1rh2n3qo1_500.gif');
   background-size: contain;
@@ -53,12 +50,17 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 150px;
+}
+.image_wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
 }
 .image-container img{
   max-width: 100%;
   max-height: 500px;
   height: auto;
-  margin: 200px;
 }
 icon-body {
   margin: 0;
@@ -83,14 +85,13 @@ icon-body {
 /* Style for the navbar */
 .navbar {
   overflow: hidden;
-  background-color: #333; /* Background color of the navbar */
 }
 
 /* Style for the links inside the navbar */
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 20px; /* Padding for the links */
   text-decoration: none;
@@ -130,4 +131,47 @@ icon-body {
 /* Add a hover effect */
 .backToTopBtn:hover {
   background-color: #555;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image_overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.image_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image_title{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image_description{
+  font-size:1.25em;
+  margin-top: 0.25em;
 }
