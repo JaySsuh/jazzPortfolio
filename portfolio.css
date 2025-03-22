@@ -1,8 +1,13 @@
+.background {
+  color: pink;
+}
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: Black;
-  margin: 10px 50px 10px 50px;
-  background-color: white;
+  background-image: url('https://64.media.tumblr.com/fad5acf8e8720fe9096aa575117d48cd/tumblr_oedw5v5oev1rh2n3qo1_500.gif');
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh;
+  margin: 0;
 }
 h1, h2 {
   font-family: 'sans-serif';
@@ -95,6 +100,9 @@ icon-body {
 .navbar a.active {
   background-color: #555; /* Background color for the active link */
 }
+.navbar a.target {
+  background-color: blue;
+}
 
 /* Style for the line beneath the navbar */
 .navbar::after {
@@ -102,4 +110,24 @@ icon-body {
   display: block;
   clear: both;
   border-bottom: 2px solid #FFA500; /* Color of the line */
+}
+
+/* Style for the Back to Top button */
+.backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none; /* Hidden by default */
+}
+
+/* Add a hover effect */
+.backToTopBtn:hover {
+  background-color: #555;
 }
