@@ -175,3 +175,17 @@ icon-body {
   font-size:1.25em;
   margin-top: 0.25em;
 }
+
+.pfp_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 3px solid black;
+}
+.pfp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}

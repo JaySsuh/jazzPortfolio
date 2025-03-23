@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<h1>Contacts</h1>
+<h1>Contact Me</h1>
 <head>
   <meta charset="UTF-8">
   <title>contact</title>
@@ -25,7 +25,6 @@
     </nav>
   </div>
 </div>
-// add logic to allow users to send emails to jasmynne through the website, allow only one email at a time.
 
 <footer>
   <div class="container">
@@ -33,9 +32,35 @@
       <div class="col">
         Contact
         <hr />
+        <div class="pfp_container; centered">
+          <img src="images/pfp.jpg" alt="Profile Picture" class="pfp">
+        </div>
         <div>(808)-445-8443</div>
-        <div>email address TBD</div>
-        <a href="https://www.instagram.com/yjungies?igsh=MWl5ejZpbDI0dTN3Ng=="><i class=" bi bi-instagram p-1"></i></a>
+        <a href="https://www.instagram.com/yjungies?igsh=MWl5ejZpbDI0dTN3Ng==" class="d-flex align-items-center text-decoration-none">
+          <i class=" bi bi-instagram p-1" style="font-size: 2rem"></i>
+          <span class="ms-2 fs-4">Instagram</span>
+        </a>
+        <div class="container mt-5">
+          <form action="mailto:suhjay234@gmail.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            I will get back to you ASAP :)
+            <p></p>
+            <button type="submit" class="btn btn-primary">Send Email</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
