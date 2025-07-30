@@ -1,3 +1,3 @@
 # jazzPortfolio
 
-An art portfolio
+An art portfolio that uses HTML and CSS as its backbone, along with tidbits of Javascript as a supporting file for certain buttons and quality of life functions for the website. The portfolio includes all graphic design, and illustration works of art, as well as separate pages for each section. Each art includes a container which allows users to hover over each image to pull up the title of the piece along with a description. There also includes a contact section where users are able to send emails to the artist as well as taking them to the artists social media pages. Finally for quality of life, I included a back to top button for users to automatically scroll all the way back to the top of the page.
