@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-accent: #E33E19;
+  --color-nav-line: #FFA500;
+  --color-highlight: #ffe18c;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    background-image: url("https://64.media.tumblr.com/fad5acf8e8720fe9096aa575117d48cd/tumblr_oedw5v5oev1rh2n3qo1_500.gif");
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: top;
+  }
+}
