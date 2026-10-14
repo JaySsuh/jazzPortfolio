@@ -9,6 +9,7 @@ export default function App() {
                 {routes.map(({path, element}) => (
                     <Route key={path} path={path} element={element} />
                 ))}
+                <Routes path="*" element={<NotFound />} />
             </Routes>
         </Layout>
     )
