@@ -1,5 +1,6 @@
 import {Routes, Route} from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+import NotFound from "./components/Pages/NotFound";
 import {routes} from "./routes";
 
 export default function App() {
